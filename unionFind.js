@@ -1,6 +1,6 @@
 'use strict';
 
-class UnionFind {
+class unionFind {
 	constructor() {
 		this._elements = [];
 	}
@@ -53,4 +53,4 @@ class UnionFind {
 	}
 }
 
-module.exports = UnionFind;
+module.exports = unionFind;

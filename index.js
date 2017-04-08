@@ -5,7 +5,7 @@ let coverByTitle = require('./coverByTitle');
 let watermelon = require('./watermelon');
 let stones = require('./stones');
 let beautifulYear = require('./beautifulYear');
-let UnionFind = require('./UnionFind');
+let unionFind = require('./unionFind');
 
 let algolib = {
     bubbleSort,
@@ -13,7 +13,7 @@ let algolib = {
     watermelon,
     stones,
     beautifulYear,
-    UnionFind
+    unionFind
 }
 
 module.exports = algolib;
