@@ -1,5 +1,6 @@
 'use strict';
 
+
 class unionFind {
 	constructor() {
 		this._elements = [];
