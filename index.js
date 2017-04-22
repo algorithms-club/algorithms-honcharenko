@@ -7,6 +7,7 @@ let stones = require('./stones');
 let beautifulYear = require('./beautifulYear');
 let unionFind = require('./unionFind');
 let unionFindWithWeight = require('./unionFindWithWeight');
+let list = require('./list');
 
 let algolib = {
     bubbleSort,
@@ -15,7 +16,8 @@ let algolib = {
     stones,
     beautifulYear,
     unionFind,
-    unionFindWithWeight
+    unionFindWithWeight,
+    list
 }
 
 module.exports = algolib;
