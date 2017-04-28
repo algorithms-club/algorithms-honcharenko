@@ -1,10 +1,10 @@
 'use strict';
 
-const algolib = require('../index.js');
+const algolib = require('../../index.js');
 
-describe.only('#unionFind', function() {
+describe.only('#unionFindWithWeight', function() {
 	it('should create proper datastructure', function() {
-		let uf = new algolib.unionFind();
+		let uf = new algolib.unionFindWithWeight();
 		uf.connect.should.be.instanceOf(Function);
 		uf.isConnected.should.be.instanceOf(Function);
 		uf.count.should.be.instanceOf(Function);
@@ -12,27 +12,27 @@ describe.only('#unionFind', function() {
 	});
 
 	it('should #isConnected return false if not connected', function() {
-		let uf = new algolib.unionFind();
+		let uf = new algolib.unionFindWithWeight();
 		let isElementConnected = uf.isConnected(3,4);
 		isElementConnected.should.be.false();
 	})
 
 	it('should #isConnected return true if elements are connected', function() {
-		let uf = new algolib.unionFind();
+		let uf = new algolib.unionFindWithWeight();
 		uf.connect(1,4);
 		let isElementConnected  = uf.isConnected(1,4);
 		isElementConnected.should.be.true();
 	})
 
 	it('should #count return amount of components', function() {
-		let uf = new algolib.unionFind();
+		let uf = new algolib.unionFindWithWeight();
 		uf.connect(1,2);
 		let countComp  = uf.count();
 		countComp.should.be.eql(1);
 	})
 
 	it('should #count return amount of components', function() {
-		let uf = new algolib.unionFind();
+		let uf = new algolib.unionFindWithWeight();
 		uf.connect(1,2);
 		uf.connect(2,3);
 		let countComp  = uf.count();
@@ -40,7 +40,7 @@ describe.only('#unionFind', function() {
 	})
 
 	it('should #count return amount of components', function() {
-		let uf = new algolib.unionFind();
+		let uf = new algolib.unionFindWithWeight();
 		uf.connect(1,2);
 		uf.connect(2,3);
 		uf.connect(0,4);
@@ -50,13 +50,13 @@ describe.only('#unionFind', function() {
 	})
 
 	it('should #count return amount of components', function() {
-		let uf = new algolib.unionFind();
+		let uf = new algolib.unionFindWithWeight();
 		let countComp  = uf.count();
 		countComp.should.be.eql(0);
 	})
 
 	it('should #component(a) return component', function() {
-		let uf = new algolib.unionFind();
+		let uf = new algolib.unionFindWithWeight();
 		uf.connect(1,2);
 		uf.connect(2,3);
 		uf.connect(0,4);
@@ -68,7 +68,7 @@ describe.only('#unionFind', function() {
 	})
 
 	it('should #component(a) return component', function() {
-		let uf = new algolib.unionFind();
+		let uf = new algolib.unionFindWithWeight();
 		uf.connect(1,2);
 		uf.connect(2,3);
 		uf.connect(0,4);
@@ -80,7 +80,7 @@ describe.only('#unionFind', function() {
 	})
 
 	it('should #component(a) return component', function() {
-		let uf = new algolib.unionFind();
+		let uf = new algolib.unionFindWithWeight();
 		uf.connect(1,2);
 		uf.connect(2,3);
 		uf.connect(0,4);

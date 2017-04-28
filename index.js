@@ -1,13 +1,13 @@
 'use strict';
 
-let bubbleSort = require('./bubble-sort');
-let coverByTitle = require('./coverByTitle');
-let watermelon = require('./watermelon');
-let stones = require('./stones');
-let beautifulYear = require('./beautifulYear');
-let unionFind = require('./unionFind');
-let unionFindWithWeight = require('./unionFindWithWeight');
-let list = require('./list');
+let bubbleSort = require('./methods/bubble-sort/bubble-sort.js');
+let coverByTitle = require('./methods/coverByTitle/coverByTitle.js');
+let watermelon = require('./methods/watermelon/watermelon.js');
+let stones = require('./methods/stones/stones.js');
+let beautifulYear = require('./methods/beautifulYear/beautifulYear.js');
+let unionFind = require('./methods/unionFind/unionFind.js');
+let unionFindWithWeight = require('./methods/unionFindWithWeight/unionFindWithWeight.js');
+let list = require('./methods/list/list.js');
 
 let algolib = {
     bubbleSort,
