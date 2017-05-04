@@ -8,6 +8,8 @@ let beautifulYear = require('./methods/beautifulYear/beautifulYear.js');
 let unionFind = require('./methods/unionFind/unionFind.js');
 let unionFindWithWeight = require('./methods/unionFindWithWeight/unionFindWithWeight.js');
 let list = require('./methods/list/list.js');
+let shellSort = require('./methods/shellSort/shellSort.js');
+let selectionSort = require('./methods/selectionSort/selectionSort.js');
 
 let algolib = {
     bubbleSort,
@@ -17,7 +19,9 @@ let algolib = {
     beautifulYear,
     unionFind,
     unionFindWithWeight,
-    list
+    list,
+    shellSort,
+    selectionSort
 }
 
 module.exports = algolib;

@@ -29,13 +29,10 @@ class list {
 		this._lastPosition = this._key;
 		this._length++;
 		this._key++;
-
-		console.log('push ', this);
 	}
 
 	pop() {
 		if (this._length === 0) {
-			console.log('POP error');
 			return false;
 		}
 		
@@ -56,7 +53,6 @@ class list {
 			this._lastPosition = undefined;
 			this._startPositin = undefined;
 		}
-		console.log('POP result: ', result);
 		return result;
 	}
 

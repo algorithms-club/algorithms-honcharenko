@@ -4,7 +4,7 @@
   "description": "algorithms implementation",
   "main": "index.js",
   "scripts": {
-    "test": "node ./node_modules/mocha/bin/mocha --require should --recursive ./methods/list/list.spec.js"
+    "test": "node ./node_modules/mocha/bin/mocha --require should --recursive ./methods/selectionSort/selectionSort.spec.js"
   },
   "repository": {
     "type": "git",
