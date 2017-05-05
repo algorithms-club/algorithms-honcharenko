@@ -2,7 +2,7 @@
 
 const algolib = require('../../index.js');
 
-describe.only('#unionFind', function() {
+describe('#unionFind', function() {
 	it('should create proper datastructure', function() {
 		let uf = new algolib.unionFind();
 		uf.connect.should.be.instanceOf(Function);
